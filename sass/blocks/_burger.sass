@@ -1,0 +1,53 @@
+#burger-container
+    position: relative
+    display: flex
+    padding: 0
+    margin: 0
+    background: none
+    // overflow: hidden
+    z-index: 999
+
+
+#burger
+    cursor: pointer
+    display: block
+
+
+
+#burger span
+    background: linear-gradient(43.83deg, #FE295E -5.84%, #FB8724 105.81%)
+    border-radius: 8px
+    display: block
+    width: 70px
+    height: 5px
+    margin-bottom: 4px
+    position: relative
+    top: 0
+    transition: all ease-in-out 0.4s
+    outline: none
+
+    &:nth-child(2) 
+        width: 60px
+
+
+#burger-container.open span:nth-child(1)
+    width: 0
+    opacity: 0
+    
+
+
+#burger-container.open span:nth-child(2)
+
+    transform: rotate(-45deg)
+    top: 5px
+    width: 40px
+
+
+#burger-container.open span:nth-child(3)
+    transform: rotate(45deg)
+    top: -4px
+    width: 40px
+
+
+.show
+    display: flex !important

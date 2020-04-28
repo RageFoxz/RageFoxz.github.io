@@ -1,0 +1,54 @@
+.package
+    margin-top: 170px
+    &__inner
+        margin: 0 50px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-end
+    &__item
+        flex-basis: 26%
+        padding: 26px 36px
+        background: #FFFFFF
+        box-shadow: 0px 15px 45px rgba(255, 53, 0, 0.05)
+        border-radius: 28px
+        cursor: pointer
+        transition: all .2s linear
+        &:hover
+            box-shadow: 0px 15px 45px rgba(255, 53, 0, 0.15)
+            .package__title
+                background: linear-gradient(75.4deg, #FE295E -5.84%, #FB8724 105.81%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+
+    &__list
+        margin-top: 24px
+        li
+            margin-bottom: 12px
+            padding-left: 16px
+            position: relative
+            display: flex
+            align-items: center
+            &:before
+                content: ''
+                width: 4px
+                height: 4px
+                position: absolute
+                left: 0
+                background: linear-gradient(75.4deg, #FE295E -5.84%, #FB8724 105.81%)
+    &__price
+        margin-top: 46px
+        text-align: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 40px
+        background: linear-gradient(75.4deg, #FE295E -5.84%, #FB8724 105.81%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-align: center
+    &__title
+        text-align: center
+    &__btn
+        margin-top: 26px
